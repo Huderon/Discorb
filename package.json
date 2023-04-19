@@ -1,0 +1,14 @@
+{
+	"name": "Discorb",
+	"version": "1.0.0",
+	"description": "Reimagining of Discord's UI in a hand-drawn style, based on CHOLE's drawing.",
+	"author": "Huderon",
+	"type": "module",
+	"scripts": {
+		"dev": "bd-scss dev",
+		"build": "bd-scss build"
+	},
+	"dependencies": {
+		"bd-scss": "^2.0.12"
+	}
+}
