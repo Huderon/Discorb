@@ -1,13 +1,26 @@
-.cozyMessage-1DWF9U > .contents-2MsGLg {
-    width: fit-content;
-    margin: 0;
-    padding: 7px 12px;
-    border: 2px solid currentColor;
-    border-radius: 245px 55px 275px 64px/55px 245px 64px 275px;
-  }
-
-@for $i from 0 through 9 {
-    [id^="chat-messages-"][id$="#{$i}"] .contents-2MsGLg {
-        color: var(--brd-acnt-clr-#{$i});
-      }
+.messageListItem-ZZ7v6g {
+    .cozyMessage-1DWF9U { 
+        .contents-2MsGLg {
+            width: fit-content;
+            margin: 0;
+            padding: 7px 12px;
+            border: 3px solid currentColor;
+            --brd-rad-0: 60px 80px 20px 40px / 30px 50px 70px 10px;
+            --brd-rad-1: 50px 20px 80px 30px / 30px 60px 10px 40px;
+            --brd-rad-2: 100px 40px 60px 30px / 40px 80px 20px 50px;
+            --brd-rad-3: 70px 20px 90px 40px / 60px 30px 80px 10px;
+            --brd-rad-4: 40px 60px 20px 80px / 50px 10px 70px 30px;
+            --brd-rad-5: 80px 30px 50px 70px / 20px 60px 40px 90px;
+            --brd-rad-6: 60px 20px 80px 40px / 30px 50px 70px 10px;
+            --brd-rad-7: 30px 80px 40px 50px / 90px 20px 60px 70px;
+            --brd-rad-8: 90px 30px 70px 50px / 10px 40px 80px 20px;
+            --brd-rad-9: 50px 60px 20px 70px / 30px 80px 10px 40px; 
+        }
+    }
+    @for $i from 0 through 9 {
+        &[id$="#{$i}"] .contents-2MsGLg:has(.messageContent-2t3eCI:not(:empty)) {
+            color: var(--brd-acnt-clr-#{$i});
+            border-radius: var(--brd-rad-#{$i});
+        }
+    }
 }
