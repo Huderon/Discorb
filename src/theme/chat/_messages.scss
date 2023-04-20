@@ -1,0 +1,13 @@
+.cozyMessage-1DWF9U > .contents-2MsGLg {
+    width: fit-content;
+    margin: 0;
+    padding: 7px 12px;
+    border: 2px solid currentColor;
+    border-radius: 245px 55px 275px 64px/55px 245px 64px 275px;
+  }
+
+@for $i from 0 through 9 {
+    [id^="chat-messages-"][id$="#{$i}"] .contents-2MsGLg {
+        color: var(--brd-acnt-clr-#{$i});
+      }
+}
