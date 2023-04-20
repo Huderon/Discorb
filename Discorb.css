@@ -1,0 +1,48 @@
+.cozyMessage-1DWF9U > .contents-2MsGLg {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0;
+  padding: 7px 12px;
+  border: 2px solid currentColor;
+  border-radius: 245px 55px 275px 64px/55px 245px 64px 275px;
+}
+
+[id^=chat-messages-][id$="0"] .contents-2MsGLg {
+  color: var(--brd-acnt-clr-0);
+}
+
+[id^=chat-messages-][id$="1"] .contents-2MsGLg {
+  color: var(--brd-acnt-clr-1);
+}
+
+[id^=chat-messages-][id$="2"] .contents-2MsGLg {
+  color: var(--brd-acnt-clr-2);
+}
+
+[id^=chat-messages-][id$="3"] .contents-2MsGLg {
+  color: var(--brd-acnt-clr-3);
+}
+
+[id^=chat-messages-][id$="4"] .contents-2MsGLg {
+  color: var(--brd-acnt-clr-4);
+}
+
+[id^=chat-messages-][id$="5"] .contents-2MsGLg {
+  color: var(--brd-acnt-clr-5);
+}
+
+[id^=chat-messages-][id$="6"] .contents-2MsGLg {
+  color: var(--brd-acnt-clr-6);
+}
+
+[id^=chat-messages-][id$="7"] .contents-2MsGLg {
+  color: var(--brd-acnt-clr-7);
+}
+
+[id^=chat-messages-][id$="8"] .contents-2MsGLg {
+  color: var(--brd-acnt-clr-8);
+}
+
+[id^=chat-messages-][id$="9"] .contents-2MsGLg {
+  color: var(--brd-acnt-clr-9);
+}
