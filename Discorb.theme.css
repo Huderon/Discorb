@@ -13,14 +13,14 @@
   --font-primary: "Mynerve", cursive;
   --font-display: "Mynerve", cursive;
   --font-headline: "Mynerve", cursive;
-  --brd-acnt-clr-0: hsl(22, 79%, 64%);
-  --brd-acnt-clr-1: hsl(338, 31%, 44%);
-  --brd-acnt-clr-2: hsl(200, 72%, 57%);
-  --brd-acnt-clr-3: hsl(48, 100%, 59%);
-  --brd-acnt-clr-4: hsl(99, 45%, 67%);
-  --brd-acnt-clr-5: hsl(337, 82%, 75%);
-  --brd-acnt-clr-6: hsl(353, 77%, 54%);
-  --brd-acnt-clr-7: hsl(206, 95%, 36%);
-  --brd-acnt-clr-8: hsl(181, 99%, 37%);
-  --brd-acnt-clr-9: hsl(248, 30%, 49%);
+  --clr-orange: hsl(22, 79%, 64%);
+  --clr-magenta: hsl(338, 31%, 44%);
+  --clr-light-blue: hsl(200, 72%, 57%);
+  --clr-yellow: hsl(48, 100%, 59%);
+  --clr-green: hsl(99, 45%, 67%);
+  --clr-pink: hsl(337, 82%, 75%);
+  --clr-red: hsl(353, 77%, 54%);
+  --clr-blue: hsl(206, 95%, 36%);
+  --clr-cyan: hsl(181, 99%, 37%);
+  --clr-purple: hsl(248, 30%, 49%);
 }
