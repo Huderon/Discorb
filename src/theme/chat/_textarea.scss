@@ -1,0 +1,69 @@
+@use '../assets';
+
+.scrollableContainer-15eg7h {
+    border: 3px solid var(--clr-purple);
+    border-radius: 245px 55px 275px 64px/55px 245px 64px 275px;
+
+    .attachWrapper-3slhXI {
+        button {
+            mask: url(assets.$icon_plus) center/14px no-repeat;
+        }
+    }
+
+    .buttons-uaqb-5 {
+        .emojiButton-3FRTuj .sprite-2lxwfc {
+				mask: url(assets.$icon_emoji) center/cover no-repeat;
+                background: var(--text-muted);
+                transform: none !important;
+                &:hover {
+                    background: var(--text-normal);
+                }
+			}
+        .stickerButton-1-nFh2 {
+            mask: url(assets.$icon_sticker) center/cover no-repeat;
+            background: var(--text-muted);
+            &:hover {
+                background: var(--text-normal);
+            }
+        }
+        .buttonContainer-2lnNiN > .button-ejjZWC:not(.emojiButton-3FRTuj) > .contents-3NembX:not(.stickerButton-1-nFh2) {
+            mask: url(assets.$icon_gif) center/cover no-repeat;
+            background: var(--text-muted);
+            &:hover {
+                background: var(--text-normal);
+            }
+        }
+        .button-2fCJ0o:has(path[d^="M16.886 7.999H20C21.104"]){
+            mask: url(assets.$icon_gift) center/cover no-repeat;
+            background: var(--text-muted);
+            &:hover {
+                background: var(--text-normal);
+            }
+        }
+        .invisible-typing-button {
+            margin: 10px 8px;
+            width: 24px;
+            svg {
+                display: none;
+            }
+            &.enabled {
+                mask: url(assets.$icon_keyboard) center/cover no-repeat;
+                background: var(--text-muted);
+                &:hover {
+                    background: var(--text-normal);
+                }
+            }
+            &:not(.enabled) {
+                mask: url(assets.$icon_silent-keyboard) center/cover no-repeat;
+                background: var(--clr-red);
+                &:hover {
+                    background: var(--clr-red);
+                }
+            }
+        } 
+        .contents-3NembX {
+            height: 24px;
+            aspect-ratio: auto;
+        }
+    }
+}

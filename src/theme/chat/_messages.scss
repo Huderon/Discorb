@@ -1,6 +1,6 @@
 .messageListItem-ZZ7v6g {
     .cozyMessage-1DWF9U { 
-        .contents-2MsGLg {
+        .contents-2MsGLg:has(.messageContent-2t3eCI:not(:empty)) {
             width: fit-content;
             margin: 0;
             padding: 7px 12px;
@@ -15,11 +15,21 @@
             --brd-rad-7: 30px 80px 40px 50px / 90px 20px 60px 70px;
             --brd-rad-8: 90px 30px 70px 50px / 10px 40px 80px 20px;
             --brd-rad-9: 50px 60px 20px 70px / 30px 80px 10px 40px; 
+            --brd-clr-0: var(--clr-orange);
+            --brd-clr-1: var(--clr-magenta);
+            --brd-clr-2: var(--clr-light-blue);
+            --brd-clr-3: var(--clr-yellow);
+            --brd-clr-4: var(--clr-green);
+            --brd-clr-5: var(--clr-pink);
+            --brd-clr-6: var(--clr-red);
+            --brd-clr-7: var(--clr-blue);
+            --brd-clr-8: var(--clr-cyan);
+            --brd-clr-9: var(--clr-purple);
         }
     }
     @for $i from 0 through 9 {
         &[id$="#{$i}"] .contents-2MsGLg:has(.messageContent-2t3eCI:not(:empty)) {
-            color: var(--brd-acnt-clr-#{$i});
+            color: var(--brd-clr-#{$i});
             border-radius: var(--brd-rad-#{$i});
         }
     }
