@@ -1,0 +1,29 @@
+@use '../assets';
+
+.typeWindows-2-g3UY {
+    .wordmark-2u86JB {
+        svg {
+            display: none;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            height: 16px;
+            width: 55px;
+            background: url(assets.$icon_discorb);
+            background-size: 55px 16px;
+        }
+    }
+    .winButtonClose-3Q8ZH5 svg {
+        -webkit-mask: url(assets.$icon_cancel) center/12px no-repeat;
+        background: var(--text-muted);
+    }
+    .winButtonMinMax-3RsPUg:has([height="9"]) svg {
+        -webkit-mask: url(assets.$icon_square) center/12px no-repeat;
+        background: var(--text-muted);
+    }
+    .winButtonMinMax-3RsPUg:has([height="1"]) svg {
+        -webkit-mask: url(assets.$icon_minus) center/12px no-repeat;
+        background: var(--text-muted);
+    }
+}
