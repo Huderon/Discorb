@@ -10,7 +10,7 @@
         border: 3px solid black;
         background-color: white;
         .barButtonIcon-bMvzp2 > path {
-            d: path(assets.$path_new-message)
+            d: path(assets.$path_new-message);
         }
     }
     &.jumpToPresentBar-1cEnH0 {
@@ -23,7 +23,7 @@
             width: 12px;
             height: 12px;
             path {
-                d: path(assets.$path_chevron)
+                d: path(assets.$path_chevron);
             }
         }
     }
