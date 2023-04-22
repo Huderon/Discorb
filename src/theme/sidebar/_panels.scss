@@ -1,13 +1,53 @@
+@use '../assets';
+
 .panels-3wFtMD {
 margin-bottom: 72px;
-.container-YkUktl {
-    box-sizing: border-box;
-    height: 70px;
-    padding: 0 18px;
-    width: calc(240px + 72px);
-    position: absolute;
-    left: -72px;
-    bottom: 0;
-    justify-content: space-between;
+    .container-YkUktl {
+        box-sizing: border-box;
+        height: 70px;
+        padding: 0 18px;
+        width: calc(240px + 72px);
+        position: absolute;
+        left: -72px;
+        bottom: 0;
+        justify-content: space-between;
+        .button-12Fmur{
+            &:has(path[d^="M14"]) {
+                path:first-child {
+                    d: path(assets.$path_microphone);
+                }
+                path:last-child {
+                    display: none;
+                }
+            }
+            &:has(path[d^="M6.7"]){
+                path:first-child {
+                    d: path(assets.$path_silent-microphone);
+                    color: var(--clr-red);
+                }
+                path:not(:first-child) {
+                    display: none;
+                }
+            }
+            &:has(path[d^="M12"]:only-child) {
+                path {
+                    d: path(assets.$path_headphones);
+                }
+            }
+            &:has(path[d^="M6.16204"]) {
+                path:first-child {
+                    d: path(assets.$path_silent-headphones);
+                    color: var(--clr-red);
+                }
+                path:not(:first-child) {
+                    display: none;
+                }
+            }
+            &:has(path[d^="M19.738"]) {
+                path {
+                    d: path(assets.$path_cog);
+                }
+            }
+        }
     }
 }
