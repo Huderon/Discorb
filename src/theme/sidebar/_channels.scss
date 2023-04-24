@@ -1,6 +1,35 @@
 @use '../assets';
 
 .sidebar-1tnWFu {
+    .header-3OsQeK {
+        .flowerStarContainer-1QeD-L {
+            width: 24px !important;
+            height: 24px !important;
+            .flowerStar-2tNFCR {
+                path {
+                    d: path(assets.$path_boost-flower);
+                }
+            }
+            .boostedGuildIconGem-u5aHBL {
+                width: 15px;
+                height: 15px;
+                path:first-child {
+                    d: path(assets.$path_boost-gem);
+                }
+                path:not(:first-child) {
+                    display: none;
+                }
+            }
+        }
+    }
+    .container-2giAcK {
+        .count-e4ipkH {
+            path {
+                d: path(assets.$path_chevron-alt);
+                stroke-width: 1;
+            }
+        }
+    }
     .iconContainer-21RCa3 {
         path[d^="M5.88657 21C5.57547"] {
             d: path(assets.$path_pound);
@@ -97,30 +126,33 @@
     }
     .arrow-2HswgU {
         path {
-            d: path(assets.$path_chevron);
+            d: path(assets.$path_chevron-alt);
         }
     }
     .addButtonIcon-3rJeaD {
         -webkit-mask: url(assets.$icon_plus) center/12px no-repeat;
         background: var(--text-muted);
     }
-    .actionIcon-2sw4Sl {
-        &:has(path[d^="M14 7V9C14 9"]) path {
-            d: path(assets.$path_cog);
-            transform: scale(.65);
+    .iconItem-1EjiK0 {
+        &.openChatIconItem-2kj5qO {
+            padding-right: unset;
         }
-        &:has(path[d^="M4.79805 3C3"]) path {
-            d: path(assets.$path_chat);
-            transform: scale(0.88) translateX(1px) translateY(3px);
-        }
-        &:has(path[d^="M14 2H16V3H"]):has(path[d^="M6.5"]) {
-            path:first-child {
-                d: path(assets.$path_add-user);
-                transform: scale(.65);
+        .actionIcon-2sw4Sl {
+            &:has(path[d^="M14 7V9C14 9"]) path {
+                d: path(assets.$path_cog-16);
             }
-            path:not(:first-child) {
-                display: none;
+            &:has(path[d^="M4.79805 3C3"]) path {
+                d: path(assets.$path_chat-alt);
+            }
+            &:has(path[d^="M14 2H16V3H"]):has(path[d^="M6.5"]) {
+                path:first-child {
+                    d: path(assets.$path_add-user-16);
+                }
+                path:not(:first-child) {
+                    display: none;
+                }
             }
         }
     }
+
 }
