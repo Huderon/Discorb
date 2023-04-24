@@ -5,65 +5,64 @@
     border-radius: 245px 55px 275px 64px/55px 245px 64px 275px;
 
     .attachWrapper-3slhXI {
-        button {
-            mask: url(assets.$icon_plus) center/14px no-repeat;
+        .attachButtonPlus-3IYelE {
+            d: path(assets.$path_plus);
         }
     }
-
     .buttons-uaqb-5 {
         .emojiButton-3FRTuj .sprite-2lxwfc {
 				mask: url(assets.$icon_emoji) center/cover no-repeat;
-                background: var(--text-muted);
+                background: var(--interactive-normal);
                 transform: none !important;
                 &:hover {
-                    background: var(--text-normal);
+                    background: var(--interactive-hover);
                 }
 			}
         .stickerButton-1-nFh2 {
-            mask: url(assets.$icon_sticker) center/cover no-repeat;
-            background: var(--text-muted);
-            &:hover {
-                background: var(--text-normal);
+            .stickerIcon-3Jx5SE {
+                width: 24px !important;
+                height: 24px !important;
+                color: var(--interactive-normal);
+                path:first-child {
+                    d: path(assets.$path_sticker);
+                }
+                path:not(:first-child) {
+                    display: none;
+                }
+                &:hover {
+                    color: var(--interactive-hover);
+                }
             }
         }
-        .buttonContainer-2lnNiN > .button-ejjZWC:not(.emojiButton-3FRTuj) > .contents-3NembX:not(.stickerButton-1-nFh2) {
-            mask: url(assets.$icon_gif) center/cover no-repeat;
-            background: var(--text-muted);
-            &:hover {
-                background: var(--text-normal);
+        .button-2fCJ0o {
+            svg:not(.icon-1d5zch) {
+                path {
+                    d: path(assets.$path_gift);
+                }
             }
-        }
-        .button-2fCJ0o:has(path[d^="M16.886 7.999H20C21.104"]){
-            mask: url(assets.$icon_gift) center/cover no-repeat;
-            background: var(--text-muted);
-            &:hover {
-                background: var(--text-normal);
+            svg.icon-1d5zch {
+                path {
+                    d: path(assets.$path_gif);
+                }
             }
         }
         .invisible-typing-button {
-            margin: 10px 8px;
-            width: 24px;
-            svg {
-                display: none;
-            }
             &.enabled {
-                mask: url(assets.$icon_keyboard) center/cover no-repeat;
-                background: var(--text-muted);
-                &:hover {
-                    background: var(--text-normal);
+                path {
+                    d: path(assets.$path_keyboard);
                 }
             }
             &:not(.enabled) {
-                mask: url(assets.$icon_silent-keyboard) center/cover no-repeat;
-                background: var(--clr-red);
-                &:hover {
-                    background: var(--clr-red);
+                svg {
+                    color: var(--clr-red);
+                    path {
+                        d: path(assets.$path_silent-keyboard);
+                    }
+                    rect {
+                        display: none;
+                    }
                 }
             }
         } 
-        .contents-3NembX {
-            height: 24px;
-            aspect-ratio: auto;
-        }
     }
 }
