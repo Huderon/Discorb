@@ -13,6 +13,35 @@
   --font-primary: "Mynerve", cursive;
   --font-display: "Mynerve", cursive;
   --font-headline: "Mynerve", cursive;
+}
+
+.theme-dark {
+  --background-primary: hsl(220, 8%, 21%);
+  --background-secondary: hsl(220, 8%, 21%);
+  --background-secondary-alt: hsl(220, 8%, 21%);
+  --background-tertiary: hsl(220, 8%, 21%);
+  --background-tertiary-alt: hsl(220, 8%, 21%);
+  --channeltextarea-background: hsl(220, 8%, 21%);
+  --clr-orange: hsl(39, 92%, 76%);
+  --clr-magenta: hsl(318, 21%, 63%);
+  --clr-light-blue: hsl(193, 34%, 86%);
+  --clr-yellow: hsl(63, 86%, 83%);
+  --clr-green: hsl(85, 57%, 71%);
+  --clr-pink: hsl(340, 75%, 79%);
+  --clr-red: hsl(0, 77%, 70%);
+  --clr-blue: rgb(148, 192, 204);
+  --clr-cyan: hsl(174, 71%, 67%);
+  --clr-purple: hsl(289, 21%, 73%);
+  --clr-accent: hsl(20, 43%, 97%);
+}
+
+.theme-light {
+  --background-primary: hsl(220, 100%, 99%);
+  --background-secondary: hsl(220, 100%, 99%);
+  --background-secondary-alt: hsl(220, 100%, 99%);
+  --background-tertiary: hsl(220, 100%, 99%);
+  --background-tertiary-alt: hsl(220, 100%, 99%);
+  --channeltextarea-background: hsl(220, 100%, 99%);
   --clr-orange: hsl(22, 79%, 64%);
   --clr-magenta: hsl(338, 31%, 44%);
   --clr-light-blue: hsl(200, 72%, 57%);
@@ -23,4 +52,5 @@
   --clr-blue: hsl(206, 95%, 36%);
   --clr-cyan: hsl(181, 99%, 37%);
   --clr-purple: hsl(248, 30%, 49%);
+  --clr-accent: hsl(0, 0%, 2%);
 }
