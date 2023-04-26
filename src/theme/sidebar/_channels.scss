@@ -1,158 +1,189 @@
 @use '../assets';
 
 .sidebar-1tnWFu {
-    .header-3OsQeK {
-        .flowerStarContainer-1QeD-L {
-            width: 24px !important;
-            height: 24px !important;
-            .flowerStar-2tNFCR {
-                path {
-                    d: path(assets.$path_boost-flower);
+    .container-1NXEtd {
+        overflow: hidden;
+        border: 3px solid var(--clr-accent);
+        border-radius: 15px 225px 15px 255px/255px 15px 225px 15px;
+        .animatedContainer-2laTjx {
+            display: none;
+        }
+        .bannerVisible-Vkyg1I .headerContent-2SNbie {
+            color: var(--header-primary);
+            -webkit-filter: none;
+            filter: none;
+          }
+        .header-3OsQeK {
+            box-shadow: none;
+            -webkit-box-shadow: none;
+            .flowerStarContainer-1QeD-L {
+                width: 24px !important;
+                height: 24px !important;
+                .flowerStar-2tNFCR {
+                    path {
+                        d: path(assets.$path_boost-flower);
+                    }
+                }
+                .boostedGuildIconGem-u5aHBL {
+                    width: 15px;
+                    height: 15px;
+                    path:first-child {
+                        d: path(assets.$path_boost-gem);
+                    }
+                    path:not(:first-child) {
+                        display: none;
+                    }
                 }
             }
-            .boostedGuildIconGem-u5aHBL {
-                width: 15px;
-                height: 15px;
+            .communityInfoContainer-1dMVpU {
+                display: none;
+            }
+        }
+        .content-yjf30S {
+            div[style="height: 84px;"] {
+                display: none;
+            }
+            div[style="height: 16px;"] {
+                display: none;
+            }
+            &:not(:has(.container-2giAcK)) {
+                div[style="height: 12px;"] {
+                    display: none;
+                }
+            }
+        } 
+        .container-2giAcK {
+            .count-e4ipkH {
+                path {
+                    d: path(assets.$path_chevron-alt);
+                    stroke-width: 1;
+                }
+            }
+        }
+        .iconContainer-21RCa3 {
+            path[d^="M5.88657 21C5.57547"] {
+                d: path(assets.$path_pound);
+            }
+            path[d^="M11.383 3.07904C11.009"] {
+                d: path(assets.$path_volume-up);
+            }
+            path[d^="M17 11V7C17 4.243"] {
+                d: path(assets.$path_locked);
+            }
+            path[d^="M6.56929 14.6869H2.34375C1"] {
+                d: path(assets.$path_comments);
+            }
+            path[d^="M33 34.5833V7"] {
+                d: path(assets.$path_rules);
+            }
+            &:has(path[d="M3.9 8.26H2V15.2941H3.9V8.26Z"]) {
                 path:first-child {
-                    d: path(assets.$path_boost-gem);
+                    d: path(assets.$path_megaphone);
+                }
+                path:not(:first-child) {
+                    display: none;
+                }
+            }
+            &:has(path[d^="M5.00328 17.5C4.69218"]) {
+                &:has(path[d^="M10.4 14C10.4"]) {
+                    path:first-child {
+                        d: path(assets.$path_browse);
+                    }
+                    path:not(:first-child) {
+                        display: none;
+                    }
+                }
+            }
+            &:has(path[d^="M5.43309 21C5.35842"]) {
+                &:has(path[d^="M13.4399 12.96C12"]) {
+                    path:first-child {
+                        d: path(assets.$path_thread);
+                    }
+                    path:not(:first-child) {
+                        display: none;
+                    }
+                }
+            }
+            &:has(path[d^="M14 8C14 7.44772"]){
+                &:has(path[d^="M19.8914 3.80204L22.2438"]) {
+                    path:first-child {
+                        d: path(assets.$path_restricted-channel);
+                    }
+                    path:not(:first-child) {
+                        display: none;
+                    }
+                }
+                &:has(path[d^="M21.025 5V4C21.025"]) {
+                    path:first-child {
+                        d: path(assets.$path_locked-channel);
+                    }
+                    path:not(:first-child) {
+                        display: none;
+                    }
+                }
+            }
+            &:has(path[d^="M13 4C13 3.66767"]) {
+                &:has(path[d^="M21.025 4V5C21.5635"]) {
+                    path:first-child {
+                        d: path(assets.$path_locked-comments);
+                    }
+                    path:not(:first-child) {
+                        display: none;
+                    }
+                }
+            }
+            &:has(path[d^="M19 3h-1V1h-"]) {
+                path:first-child {
+                    d: path(assets.$path_calendar);
+                }
+                :not(:first-child) {
+                    display: none;
+                }
+            }
+            &:has(path[d^="M22.545 4.91992V3"]):has(path[d^="M15.44 6.99992C15"]):has(path[d^="M13.44 12.9599C12"]) {
+                path:first-child {
+                    d: path(assets.$path_locked-thread);
                 }
                 path:not(:first-child) {
                     display: none;
                 }
             }
         }
-    }
-    .container-2giAcK {
-        .count-e4ipkH {
+        .voiceChannelsToggleIcon-2RPGsz {
+            path {
+                d: path(assets.$path_volume-up);
+            }
+        }
+        .arrow-2HswgU {
             path {
                 d: path(assets.$path_chevron-alt);
-                stroke-width: 1;
             }
         }
+        .addButtonIcon-3rJeaD {
+            -webkit-mask: url(assets.$icon_plus) center/12px no-repeat;
+            background: var(--text-muted);
+        }
+        .iconItem-1EjiK0 {
+            &.openChatIconItem-2kj5qO {
+                padding-right: unset;
+            }
+            .actionIcon-2sw4Sl {
+                &:has(path[d^="M14 7V9C14 9"]) path {
+                    d: path(assets.$path_cog-16);
+                }
+                &:has(path[d^="M4.79805 3C3"]) path {
+                    d: path(assets.$path_chat-alt);
+                }
+                &:has(path[d^="M14 2H16V3H"]):has(path[d^="M6.5"]) {
+                    path:first-child {
+                        d: path(assets.$path_add-user-16);
+                    }
+                    path:not(:first-child) {
+                        display: none;
+                    }
+                }
+            }
+        }
+    
     }
-    .iconContainer-21RCa3 {
-        path[d^="M5.88657 21C5.57547"] {
-            d: path(assets.$path_pound);
-        }
-        path[d^="M11.383 3.07904C11.009"] {
-            d: path(assets.$path_volume-up);
-        }
-        path[d^="M17 11V7C17 4.243"] {
-            d: path(assets.$path_locked);
-        }
-        path[d^="M6.56929 14.6869H2.34375C1"] {
-            d: path(assets.$path_comments);
-        }
-        path[d^="M33 34.5833V7"] {
-            d: path(assets.$path_rules);
-        }
-        &:has(path[d="M3.9 8.26H2V15.2941H3.9V8.26Z"]) {
-            path:first-child {
-                d: path(assets.$path_megaphone);
-            }
-            path:not(:first-child) {
-                display: none;
-            }
-        }
-        &:has(path[d^="M5.00328 17.5C4.69218"]) {
-            &:has(path[d^="M10.4 14C10.4"]) {
-                path:first-child {
-                    d: path(assets.$path_browse);
-                }
-                path:not(:first-child) {
-                    display: none;
-                }
-            }
-        }
-        &:has(path[d^="M5.43309 21C5.35842"]) {
-            &:has(path[d^="M13.4399 12.96C12"]) {
-                path:first-child {
-                    d: path(assets.$path_thread);
-                }
-                path:not(:first-child) {
-                    display: none;
-                }
-            }
-        }
-        &:has(path[d^="M14 8C14 7.44772"]){
-            &:has(path[d^="M19.8914 3.80204L22.2438"]) {
-                path:first-child {
-                    d: path(assets.$path_restricted-channel);
-                }
-                path:not(:first-child) {
-                    display: none;
-                }
-            }
-            &:has(path[d^="M21.025 5V4C21.025"]) {
-                path:first-child {
-                    d: path(assets.$path_locked-channel);
-                }
-                path:not(:first-child) {
-                    display: none;
-                }
-            }
-        }
-        &:has(path[d^="M13 4C13 3.66767"]) {
-            &:has(path[d^="M21.025 4V5C21.5635"]) {
-                path:first-child {
-                    d: path(assets.$path_locked-comments);
-                }
-                path:not(:first-child) {
-                    display: none;
-                }
-            }
-        }
-        &:has(path[d^="M19 3h-1V1h-"]) {
-            path:first-child {
-                d: path(assets.$path_calendar);
-            }
-            :not(:first-child) {
-                display: none;
-            }
-        }
-        &:has(path[d^="M22.545 4.91992V3"]):has(path[d^="M15.44 6.99992C15"]):has(path[d^="M13.44 12.9599C12"]) {
-            path:first-child {
-                d: path(assets.$path_locked-thread);
-            }
-            path:not(:first-child) {
-                display: none;
-            }
-        }
-    }
-    .voiceChannelsToggleIcon-2RPGsz {
-        path {
-            d: path(assets.$path_volume-up);
-        }
-    }
-    .arrow-2HswgU {
-        path {
-            d: path(assets.$path_chevron-alt);
-        }
-    }
-    .addButtonIcon-3rJeaD {
-        -webkit-mask: url(assets.$icon_plus) center/12px no-repeat;
-        background: var(--text-muted);
-    }
-    .iconItem-1EjiK0 {
-        &.openChatIconItem-2kj5qO {
-            padding-right: unset;
-        }
-        .actionIcon-2sw4Sl {
-            &:has(path[d^="M14 7V9C14 9"]) path {
-                d: path(assets.$path_cog-16);
-            }
-            &:has(path[d^="M4.79805 3C3"]) path {
-                d: path(assets.$path_chat-alt);
-            }
-            &:has(path[d^="M14 2H16V3H"]):has(path[d^="M6.5"]) {
-                path:first-child {
-                    d: path(assets.$path_add-user-16);
-                }
-                path:not(:first-child) {
-                    display: none;
-                }
-            }
-        }
-    }
-
 }
