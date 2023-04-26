@@ -4,4 +4,9 @@
         border: 3px solid var(--clr-accent);
         border-radius: 245px 55px 275px 64px/55px 245px 64px 275px;
     }
+    .content-1jQy2l {
+        &::before {
+            display: none;
+        }
+    }
 }
