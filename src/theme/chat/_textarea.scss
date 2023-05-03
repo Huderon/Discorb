@@ -35,7 +35,7 @@
             }
         }
         .button-2fCJ0o {
-            svg:not(.icon-1d5zch) {
+            svg:not(.icon-1d5zch, .sendIcon-1HcEzu) {
                 path {
                     d: path(assets.$path_gift);
                 }
@@ -43,6 +43,11 @@
             svg.icon-1d5zch {
                 path {
                     d: path(assets.$path_gif);
+                }
+            }
+            svg.sendIcon-1HcEzu {
+                path{
+                    d: path(assets.$path_send);
                 }
             }
         }
