@@ -1,5 +1,8 @@
 .container-2o3qEW {
-    overflow: hidden;
-    border: 3px solid var(--clr-accent);
-    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    .membersWrap-3NUR2t {
+        overflow: hidden;
+        border: 3px solid var(--clr-accent);
+        border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+        min-height: -webkit-fill-available;
+    }
   }

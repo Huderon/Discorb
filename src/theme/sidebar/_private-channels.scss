@@ -1,0 +1,40 @@
+@use '../assets';
+
+.sidebar-1tnWFu {
+    .privateChannels-oVe7HL {
+        overflow: hidden;
+        border: 3px solid var(--clr-accent);
+        border-radius: 15px 225px 15px 255px/255px 15px 225px 15px;
+        .searchBar-3TnChZ {
+            box-shadow: none;
+            -webkit-box-shadow: none;
+        }
+        .content-yjf30S {
+            .channel-1Shao0 {
+                .link-39sEB3 {
+                    &[href="/channels/@me"] {
+                        .linkButtonIcon-7rsZcu {
+                            path:first-child {
+                                d: path(assets.$path_social);
+                                transform: none;
+                            }
+                            path:not(:first-child) {
+                                display: none;
+                            } 
+                        }
+                    }
+                }
+            }
+            .privateChannelsHeaderContainer-1UWASm {
+                .icon-2xnN2Y {
+                    mask: url(assets.$icon_plus) center/cover no-repeat;
+                    background: var(--interactive-normal);
+                    transform: none !important;
+                    &:hover {
+                        background: var(--interactive-hover);
+                    }
+                }
+            }
+        }
+    }
+}
