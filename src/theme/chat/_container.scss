@@ -139,6 +139,9 @@
                             display: none;
                         }
                     }
+                    .updateIconForeground-2V_zo4 {
+                        d: path(assets.$path_download)
+                    }
                     &:has(path[d^="M19 3H4.99C3.88"]) {
                         path {
                             d: path(assets.$path_inbox);
@@ -152,15 +155,32 @@
                 }
             }
             .search-2Mwzzq {
-                .iconContainer-1RqWJj {
-                    width: 24px;
-                    height: 24px;
-                    .icon-18rqoe {
-                        path {
-                            d: path(assets.$path_search);
+                .icon-tZMHgY {
+                    &:not(.clear-2KQ7l1) {
+                        .iconContainer-1RqWJj {
+                            width: 24px;
+                            height: 24px;
+                            .icon-18rqoe {
+                                transform: none;
+                                -webkit-transform: none;
+                                path {
+                                    d: path(assets.$path_search);
+                                }
+                            }
                         }
                     }
-                }
+                    &.clear-2KQ7l1 {
+                        .iconContainer-1RqWJj {
+                            .icon-18rqoe {
+                                transform: none;
+                                -webkit-transform: none;
+                                path {
+                                    d: path(assets.$path_cancel-alt-2)
+                                }
+                            }
+                        }
+                    }
+                }       
             }
         }
     }
