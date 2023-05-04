@@ -1,0 +1,63 @@
+@use "../assets";
+
+.container-36u7Lw {
+  .libraryHeader-2loraV {
+    overflow: hidden;
+    border: 3px solid var(--clr-accent);
+    border-radius: 245px 55px 275px 64px/55px 245px 64px 275px;
+    &::before {
+      display: none;
+    }
+    .children-3xh0VB {
+      .iconWrapper-2awDjA {
+        .icon-2xnN2Y {
+          path {
+            d: path(assets.$path_backpack);
+            stroke-width: 2;
+          }
+        }
+      }
+      &::after {
+        display: none;
+      }
+    }
+    .toolbar-3_r2xA {
+      .libraryFilter-1nwg6T {
+        .iconContainer-6pgShY {
+          width: 24px;
+          height: 24px;
+          .icon-3CDcPB {
+            &:not(.clear-3102V9) {
+              transform: none;
+              -webkit-transform: none;
+              path {
+                d: path(assets.$path_search);
+              }
+            }
+            &.clear-3102V9 {
+              transform: none;
+              -webkit-transform: none;
+              path {
+                d: path(assets.$path_cancel-alt-2);
+              }
+            }
+          }
+        }
+      }
+      .iconWrapper-2awDjA {
+        .icon-2xnN2Y {
+          &:has(path[d^="M19 3H4.99C3.88"]) {
+            path {
+              d: path(assets.$path_inbox);
+            }
+          }
+          &:has(path[d^="M12 2C6.486 2"]) {
+            path {
+              d: path(assets.$path_help-alt);
+            }
+          }
+        }
+      }
+    }
+  }
+}

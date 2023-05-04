@@ -1,0 +1,53 @@
+@use "../assets";
+
+.container-2cd8Mz {
+  .container-ZMc96U {
+    overflow: hidden;
+    border: 3px solid var(--clr-accent);
+    border-radius: 245px 55px 275px 64px/55px 245px 64px 275px;
+    .children-3xh0VB {
+      &::after {
+        display: none;
+      }
+      .iconWrapper-2awDjA {
+        .icon-2xnN2Y {
+          &:has(path[d^="M0.5,0 L0.5,1.5"]) {
+            path:first-child {
+              d: path(assets.$path_social);
+              transform: none;
+            }
+            path:not(:first-child) {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+    .toolbar-3_r2xA {
+      .iconWrapper-2awDjA {
+        .icon-2xnN2Y {
+            &:has(path[d^="M20.998 0V3H23"]) {
+                path {
+                    d: path(assets.$path_new-chat);
+                  } 
+            }
+          &:has(path[d^="M19 3H4.99C3.88"]) {
+            path {
+              d: path(assets.$path_inbox);
+            }
+          }
+          &:has(path[d^="M12 2C6.486 2"]) {
+            path {
+              d: path(assets.$path_help-alt);
+            }
+          }
+        }
+      }
+    }
+  }
+  .tabBody-2dgbAs {
+    &::before {
+      display: none;
+    }
+  }
+}
