@@ -1,0 +1,26 @@
+@use "../assets";
+
+.wrapper-38slSD {
+  .listItem-3SmSlK {
+    .folder-241Joy {
+      .folderIconWrapper-1oRIZr {
+        &::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-color: inherit;
+            -webkit-mask: url(assets.$icon_folder-closed) center/24px no-repeat;
+            filter: brightness(2) saturate(2);
+        }
+        .closedFolderIconWrapper-3tRb2d {
+          display: none;
+        }
+        .expandedFolderIconWrapper-3RwQpD {
+          path {
+            d: path(assets.$path_folder-open);
+          }
+        }
+      }
+    }
+  }
+}

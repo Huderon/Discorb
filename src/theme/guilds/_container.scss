@@ -1,8 +1,31 @@
+@use "../assets";
+
 .guilds-2JjMmN {
-    margin-bottom: 72px;
-    .scroller-3X7KbA {
-        overflow: hidden;
-        border: 3px solid var(--clr-accent);
-        border-radius: 245px 55px 275px 64px/55px 245px 64px 275px;
+  margin-bottom: 72px;
+  .scroller-3X7KbA {
+    overflow: hidden;
+    border: 3px solid var(--clr-accent);
+    border-radius: 245px 55px 275px 64px/55px 245px 64px 275px;
+    .tutorialContainer-1pL9QS {
+      .homeIcon-r0w4ny {
+        path {
+          d: path(assets.$path_discord);
+        }
       }
+    }
+    .listItem-3SmSlK:has(.circleIconButton-1VxDrg) {
+      .circleIconButton-1VxDrg {
+        &:has(path[d^="M20 11.1111H12"]) {
+          path {
+            d: path(assets.$path_plus-alt);
+          }
+        }
+        &:has(path[d^="M12 10.9C11.39 10.9"]) {
+          path {
+            d: path(assets.$path_compass);
+          }
+        }
+      }
+    }
+  }
 }

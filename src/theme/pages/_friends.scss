@@ -26,11 +26,11 @@
     .toolbar-3_r2xA {
       .iconWrapper-2awDjA {
         .icon-2xnN2Y {
-            &:has(path[d^="M20.998 0V3H23"]) {
-                path {
-                    d: path(assets.$path_new-chat);
-                  } 
+          &:has(path[d^="M20.998 0V3H23"]) {
+            path {
+              d: path(assets.$path_new-chat);
             }
+          }
           &:has(path[d^="M19 3H4.99C3.88"]) {
             path {
               d: path(assets.$path_inbox);
@@ -48,6 +48,30 @@
   .tabBody-2dgbAs {
     &::before {
       display: none;
+    }
+    .peopleColumn-1wMU14 {
+      .searchBar-2aylmZ {
+        .iconContainer-6pgShY {
+          width: 24px;
+          height: 24px;
+          .icon-3CDcPB {
+            &:not(.clear-3102V9) {
+              transform: none;
+              -webkit-transform: none;
+              path {
+                d: path(assets.$path_search);
+              }
+            }
+            &.clear-3102V9 {
+              transform: none;
+              -webkit-transform: none;
+              path {
+                d: path(assets.$path_cancel-alt-2);
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
