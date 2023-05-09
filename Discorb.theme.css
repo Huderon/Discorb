@@ -36,12 +36,12 @@
 }
 
 .theme-light {
-  --background-primary: hsl(220, 100%, 99%);
-  --background-secondary: hsl(220, 100%, 99%);
-  --background-secondary-alt: hsl(220, 100%, 99%);
-  --background-tertiary: hsl(220, 100%, 99%);
-  --background-tertiary-alt: hsl(220, 100%, 99%);
-  --channeltextarea-background: hsl(220, 100%, 99%);
+  --background-primary: hsl(30, 75%, 97%);
+  --background-secondary: hsl(30, 75%, 97%);
+  --background-secondary-alt: hsl(30, 75%, 97%);
+  --background-tertiary: hsl(30, 75%, 97%);
+  --background-tertiary-alt: hsl(30, 75%, 97%);
+  --channeltextarea-background: hsl(30, 75%, 97%);
   --clr-orange: hsl(22, 79%, 64%);
   --clr-magenta: hsl(338, 31%, 44%);
   --clr-light-blue: hsl(200, 72%, 57%);
