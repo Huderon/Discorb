@@ -9,6 +9,7 @@
 @import url('https://huderon.github.io/Discorb/Discorb.css');
 
 @import url("https://fonts.googleapis.com/css2?family=Mynerve&display=swap");
+@import url("https://gist.githubusercontent.com/thenml/04e2aac91366c31404423447d74c4daf/raw/37894716fdba7c04463f0fcb1842525a04e58e5e/discord-free-comet-react.css");
 :root {
   --font-primary: "Mynerve", cursive;
   --font-display: "Mynerve", cursive;

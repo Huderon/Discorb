@@ -34,6 +34,9 @@
   color: var(--clr-accent);
 }
 
+.messageListItem-ZZ7v6g .cozyMessage-1DWF9U .contents-2MsGLg {
+  text-shadow: -1px -1px 0 var(--background-primary), 1px -1px 0 var(--background-primary), -1px 1px 0 var(--background-primary), 1px 1px 0 var(--background-primary);
+}
 .messageListItem-ZZ7v6g .cozyMessage-1DWF9U .contents-2MsGLg:has(.messageContent-2t3eCI:not(:empty)) {
   width: -moz-fit-content;
   width: fit-content;
